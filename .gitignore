@@ -1,0 +1,13 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 模型权重与数据文件
+*.pth
+*.npz
+
+# 备份与临时文件
+_tiny_ra_backup/
+augmentation_preview.png
+preflight.json

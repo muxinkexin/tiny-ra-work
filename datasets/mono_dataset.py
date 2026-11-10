@@ -15,6 +15,7 @@ from PIL import Image  # using pillow-simd for increased speed
 import torch
 import torch.utils.data as data
 from torchvision import transforms
+from tiny_ra_core import shared_jitter
 
 
 def pil_loader(path):
@@ -57,7 +58,7 @@ class MonoDataset(data.Dataset):
         self.width_full = 1242
         # self.num_scales = num_scales
         self.num_scales = 1
-        self.interp = Image.ANTIALIAS   #a high-quality downsampling filter
+        self.interp = Image.Resampling.LANCZOS   #a high-quality downsampling filter
 
         self.frame_idxs = frame_idxs
 
@@ -256,7 +257,7 @@ class MonoDataset(data.Dataset):
             inputs[("inv_K_LoS", scale)] = torch.from_numpy(inv_K_LoS)
 
         if do_color_aug:
-            color_aug = transforms.ColorJitter.get_params(
+            color_aug = shared_jitter(
                 self.brightness, self.contrast, self.saturation, self.hue)
         else:
             color_aug = (lambda x: x)

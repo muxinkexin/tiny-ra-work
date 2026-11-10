@@ -1,0 +1,37 @@
+{
+  "ra_commit": "4f7ebb436c33b61ed31e49ad1f98d66dffc596b9",
+  "lite_commit": "4874b35df8ed4da16159ce8be8c697028b72bf76",
+  "source_hashes": {
+    "RA-Depth/trainer.py": "bdf0ae5d0cb0102d7cb2eb3f6429266f1db387c49e2bcd4707df067046cb7d29",
+    "RA-Depth/networks/__init__.py": "482ee3683b2ddc94788b994830494d2c2fc9449e23d65488b7c50e9e1b806348",
+    "RA-Depth/datasets/mono_dataset.py": "7e2560e49442a63f818965c7e238951d2bfa7557850c313ee430699b7934b30f",
+    "RA-Depth/datasets/__init__.py": "09d0e99e70d84e25fd48a4a8749ad81104687fd1d863106961190845409fb6e2",
+    "RA-Depth/datasets/kitti_dataset.py": "a03c82e9baf1d2e27a3bc3fb09735cf627aefe6626fbf323ff4a620222390f42",
+    "RA-Depth/networks/resnet_encoder.py": "0a48b1b303a7029f8045db92af16217b742cae802722078965e43b5e057ac4df",
+    "RA-Depth/networks/pose_decoder.py": "fc74683c35f2802247f09da2a95eeb420309acb87df99b610ec102b8bb2861c8",
+    "RA-Depth/kitti_utils.py": "2906e19707fcc3ae5b5b1c77f4d893f6cd72787f2511bc1cf8fda9e56b59584b",
+    "RA-Depth/layers.py": "0fe7e7eebaa84401c1dd5bfb5a62020b5810727bdbb011a4bf26d63ce80a612b",
+    "RA-Depth/options.py": "07756578afc94056a2d874956f8e03ae46b6a7abf66263191837d121c2fa906f",
+    "RA-Depth/utils.py": "9a85cb6ce99760f82d3228c004aebe3b256c3554e2aab68db47a86d0618a0254",
+    "Lite-Mono/networks/depth_encoder.py": "2f6ed36f402db5a6959fa44065c048b0951120bdd763e1fac5f0b44daa551e39",
+    "Lite-Mono/networks/depth_decoder.py": "351ea12585656e2cde72b4ee2a62915f24259e3ac18457adf558a775e41ac2e3",
+    "Lite-Mono/layers.py": "e242568da378dcbbe5795e94c6c756caefd6e2176e960f593c3de14cc34222d6"
+  },
+  "patched_hashes": {
+    "trainer.py": "47b4d1f1254e92a4019494d86370122770daa3700b9cd943d08ba800890b8fde",
+    "networks/__init__.py": "6d403860918a054a3b7f0b52655ac12a0a63ab9061ce9a63eb07ec9badd2ade8",
+    "networks/tiny_encoder.py": "2f6ed36f402db5a6959fa44065c048b0951120bdd763e1fac5f0b44daa551e39",
+    "networks/tiny_decoder.py": "587a0228594944aebacb9b45274937cf5a4e4236e9c3b6400de4e05d76a4395a",
+    "tiny_ra_layers.py": "e242568da378dcbbe5795e94c6c756caefd6e2176e960f593c3de14cc34222d6",
+    "datasets/mono_dataset.py": "8a4eec886e2fb4966b5c5c73dd64f4db031fb09fafe3a06a95c9d3133fbeb793",
+    "datasets/__init__.py": "b7ed9e03e669e7e24fa0666240bf22d7afe5223a31dcd89ffb587eb294e659db",
+    "networks/resnet_encoder.py": "ae903239e5a2d0e12e9ff280c6e407fa5153e52ae11b5cd529c970b63eac01d4",
+    "kitti_utils.py": "98af539cc22b5cfe5a5c7ae3dc7627b51c8641f970c7c95c10cbbc8dd7617f0f",
+    "tiny_ra_core.py": "424b9b79e1c541499895612a2fbbc6fc901cd70b79e3934faf6a9eacf9b36960",
+    "tiny_ra_train.py": "0153e08ce77c3ccd951c96831f8804cfa4e29510c79c2708f9b3b7ea82ec437f",
+    "tiny_ra_eval.py": "e874b517121e2ddd95a75f32d96008759ef64d468a8ea932948bd868d72c1551",
+    "tiny_ra_check.py": "a842d0addcf399a566a311e921daed121a0c3595f35baedc405db92762d28147",
+    "tiny_ra_tests.py": "9be75178cbd2d3576f4c71ce5f7cd0f57ddbd25ef024658114265e45a8246662"
+  },
+  "implementation": "tiny-RA training-mechanism transfer, corrected per-item low mask; upstream LoS photo convention retained"
+}

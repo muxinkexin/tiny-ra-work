@@ -23,7 +23,7 @@ from layers import *
 
 import datasets
 import networks
-from IPython import embed
+# Interactive debugging import removed by tiny-RA recipe
 
 
 class Trainer:
@@ -51,11 +51,11 @@ class Trainer:
         if self.opt.use_stereo:
             self.opt.frame_ids.append("s")
 
-        self.models["encoder"] = networks.hrnet18(self.opt.weights_init == "pretrained")
+        self.models["encoder"] = networks.LiteMono(model="lite-mono-tiny", height=self.opt.height, width=self.opt.width)
         self.models["encoder"].to(self.device)
         self.parameters_to_train += list(self.models["encoder"].parameters())
 
-        self.models["depth"] = networks.DepthDecoder_MSF(
+        self.models["depth"] = networks.TinyDepthDecoder(
             self.models["encoder"].num_ch_enc, self.opt.scales)
         self.models["depth"].to(self.device)
         self.parameters_to_train += list(self.models["depth"].parameters())
